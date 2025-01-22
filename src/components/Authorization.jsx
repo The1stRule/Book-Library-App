@@ -16,7 +16,7 @@ const Authorization = ({ usersList, setThisUser }) => {
             if(user.email === email && user.password === password) {
                 e.target.reset();
                 setIsError(false);
-                setThisUser(user)
+                setThisUser(user);
                 navigate("/discover");
                 return;
             }
@@ -37,7 +37,7 @@ const Authorization = ({ usersList, setThisUser }) => {
                     <label htmlFor="auto-pass">Password</label>
                     <input type="password" name="password" id="auto-pass" placeholder="Please enter your password" required />
                 </div>
-                <button>Sign up</button>
+                <button>Sign in</button>
                 <p>Don't have an account? <span><Link to="/register">Sign up</Link></span></p>
                 <p className="error-p" style={{color: "red"}}>{ isError ? "User not found" : ""}</p>
             </form>

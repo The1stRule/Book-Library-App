@@ -6,7 +6,6 @@ const Nav = ({ setThisUser }) => {
 
     const handleLogOut = () => {
         setThisUser({});
-        navigate("/");
     }
 
     const pStyles = {

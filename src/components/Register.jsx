@@ -11,7 +11,7 @@ const Register = ({ useRegister }) => {
 
         for(const user of usersList) {
             if(user.email === e.target.email.value) {
-                setIsError(true)
+                setIsError(true);
                 return;
             }
         }
